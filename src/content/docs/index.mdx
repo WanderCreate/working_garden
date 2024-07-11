@@ -16,7 +16,7 @@ hero:
       icon: external
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, Card, CardGrid } from '@astrojs/starlight/components';
 
 ## Next steps
 
@@ -33,4 +33,21 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	<Card title="Read the docs" icon="open-book">
 		Learn more in [the Starlight Docs](https://starlight.astro.build/).
 	</Card>
+</CardGrid>
+
+<CardGrid stagger>
+<LinkCard
+  title="Books"
+  description="Writing, reading, talking about them"
+  href="/books/"
+/>
+<LinkCard
+  title="Community"
+  description="Sharing, creating"
+  href="/community/"
+/>
+</CardGrid>
+<CardGrid>
+  <LinkCard title="Food" href="/food/food/" />
+  <LinkCard title="Gardening" href="/gardening/" />
 </CardGrid>
